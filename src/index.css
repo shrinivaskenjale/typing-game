@@ -1,0 +1,50 @@
+:root {
+  --transition: all 0.3s ease-in-out;
+  --radius: 0.25rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: rgb(45, 45, 73);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  color: white;
+}
+
+input,
+button,
+select {
+  font-family: inherit;
+}
+
+svg {
+  display: grid;
+  place-items: center;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: var(--radius);
+  padding: 0.5rem;
+  border: transparent;
+  transition: var(--transition);
+  background: white;
+  color: rgb(45, 45, 73);
+  font-weight: bold;
+}
+
+button:hover {
+  transform: scale(1.1);
+}

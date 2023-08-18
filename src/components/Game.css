@@ -1,0 +1,49 @@
+.game {
+  background: rgb(97, 107, 142);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 0.25rem 0.75rem rgb(0, 0, 0, 0.3);
+  position: relative;
+  text-align: center;
+  width: 90vw;
+  max-width: 500px;
+}
+
+.game h2 {
+  background: rgb(0, 0, 0, 0.3);
+  padding: 0.25rem;
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+}
+
+.word {
+  margin: 0.5rem 0 1.25rem;
+  font-size: 2rem;
+}
+
+.game input {
+  border: transparent;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  width: 80%;
+  outline: 0;
+}
+
+.progress {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.game-end {
+  border-radius: var(--radius);
+  inset: 0;
+  display: grid;
+  place-content: center;
+}
+
+.game-end p {
+  margin: 1rem 1rem 2rem;
+}

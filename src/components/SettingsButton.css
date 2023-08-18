@@ -1,0 +1,16 @@
+.settings-button {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  font-size: 2rem;
+  background: rgb(97, 107, 142);
+  color: white;
+  padding: 0.5rem;
+}
+
+.settings-button svg {
+  transition: var(--transition);
+}
+.settings-button:hover svg {
+  transform: rotate(90deg);
+}

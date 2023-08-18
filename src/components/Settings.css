@@ -1,0 +1,28 @@
+.settings {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgb(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.5rem;
+  transition: var(--transition);
+  transform: translateY(0);
+}
+
+.settings.hidden {
+  transform: translateY(-100%);
+}
+
+.settings select {
+  width: 8rem;
+  padding: 0.5rem;
+  /* appearance: none; */
+}
+
+.settings select:focus {
+  outline: transparent;
+}
