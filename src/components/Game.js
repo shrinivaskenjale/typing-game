@@ -4,15 +4,15 @@ import { getRandomWord } from "../utils";
 
 export default function Game({ onRestart, incrementTime }) {
   const [enteredWord, setEnteredWord] = useState("");
-  const [word, setWord] = useState(() => {
-    return getRandomWord();
-  });
+  const [word, setWord] = useState(() => getRandomWord());
   const [score, setScore] = useState(0);
   const [time, setTime] = useState(10);
   const [status, setStatus] = useState("started");
 
   function handleChange(e) {
     const entry = e.target.value;
+    setEnteredWord(entry);
+
     if (entry === word) {
       setWord(getRandomWord());
       setEnteredWord("");
@@ -20,8 +20,6 @@ export default function Game({ onRestart, incrementTime }) {
       setTime((t) => t + incrementTime);
       return;
     }
-
-    setEnteredWord(entry);
   }
 
   //   Effect for interval
